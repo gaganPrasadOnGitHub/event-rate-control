@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Event Rate Control</title>
+  </head>
+  <body>
+    <h2>Try multiple rapid clicks on button to see the difference</h2>
+    <div id="rateLimiterSection">
+      <p><strong>Normal</strong> click count: <span id="normalCount">0</span></p>
+      <p><strong>Debounce</strong> click count: <span id="debounceCount">0</span></p>
+      <p><strong>Throttle</strong> click count: <span id="throttleCount">0</span></p>
+      <div class="button-container">
+        <button id="counterButton">Click me</button>
+        <button id="resetButton">Reset</button>
+      </div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
